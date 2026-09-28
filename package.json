@@ -1,0 +1,14 @@
+{
+  "name": "connectmedia-sms",
+  "version": "1.0.0",
+  "description": "Official Node.js client for the Connect Media SMS API: bulk SMS to Safaricom, Airtel and Telkom in Kenya and 190+ countries.",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "files": ["src"],
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node --test" },
+  "keywords": ["sms", "bulk sms", "kenya", "safaricom", "airtel", "sms api", "connect media"],
+  "author": "Connect Media <info@connectmedia.co.ke> (https://connectmedia.co.ke/)",
+  "homepage": "https://connectmedia.co.ke/developers/",
+  "license": "MIT"
+}
