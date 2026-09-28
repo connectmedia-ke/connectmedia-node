@@ -104,7 +104,7 @@ class Client {
           Authorization: `Bearer ${this.apiKey}`,
           'Content-Type': 'application/json',
           Accept: 'application/json',
-          'User-Agent': 'connectmedia-sms-node/1.0.0',
+          'User-Agent': 'connectmedia-sms-node/10.0.0',
         },
         body: JSON.stringify({ action, ...payload }),
         signal: controller.signal,
