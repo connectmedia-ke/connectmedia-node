@@ -26,7 +26,7 @@ test('send builds the request', async () => {
   const f = fakeFetch({ code: '201', message: 'Queued' });
   const res = await new Client('k'.repeat(64), { fetch: f }).send(['0712345678', '+254733000111'], 'Hi', { sender: 'Brand' });
   const { url, init, body } = f.calls[0];
-  assert.equal(url, 'https://dashboard.connectmedia.co.ke/api.php');
+  assert.equal(url, 'https://app.connectmedia.co.ke/api.php');
   assert.equal(init.method, 'POST');
   assert.equal(init.headers.Authorization, `Bearer ${'k'.repeat(64)}`);
   assert.deepEqual(body, { action: 'send', to: '254712345678,254733000111', message: 'Hi', sender: 'Brand' });

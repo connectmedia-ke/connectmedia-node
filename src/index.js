@@ -1,6 +1,6 @@
 'use strict';
 
-const DEFAULT_BASE_URL = 'https://dashboard.connectmedia.co.ke/api.php';
+const DEFAULT_BASE_URL = 'https://app.connectmedia.co.ke/api.php';
 
 // Application code returned in the JSON envelope when each action succeeds.
 const SUCCESS_CODES = { send: '201', balance: '200', history: '202', inbox: '302' };
@@ -104,7 +104,7 @@ class Client {
           Authorization: `Bearer ${this.apiKey}`,
           'Content-Type': 'application/json',
           Accept: 'application/json',
-          'User-Agent': 'connectmedia-sms-node/10.0.0',
+          'User-Agent': 'connectmedia-sms-node/10.0.1',
         },
         body: JSON.stringify({ action, ...payload }),
         signal: controller.signal,
